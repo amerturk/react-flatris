@@ -33,4 +33,5 @@ export function createStore(initialState: State): Store<State, Action> {
     initialState,
     composeWithDevTools(applyMiddleware(thunk))
   );
+
 }
